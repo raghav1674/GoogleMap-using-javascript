@@ -1,0 +1,206 @@
+
+body{
+    position: relative;
+    height: 100vh;
+    width:100%;
+}
+
+#map{
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+    height: 100%;
+}
+.title{
+position: absolute;
+    z-index: 100;
+    font-size: 60px;
+    font-family: 'Bookman';
+  
+    color:white;
+    text-transform: uppercase;
+    top: 100px;
+    left: 100px;
+}
+
+.search-container{
+    display:flex;
+
+    position: absolute;
+    width: 350px;
+    z-index: 100;
+    top: 200px;
+    left: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #454E53;
+    opacity: 0.8;
+
+}
+.search-container input{
+    width:100%;
+    font-size:25px;
+    background-color: transparent;
+    border:none;
+    color:white;
+}
+    
+.search-container input:focus{
+    outline: none;
+    opacity: 0.9;
+}
+.search-container .search{
+    display:flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-grow: 1;
+    align-items: center;
+
+
+
+}
+.search-container i{
+    font-size:10px;
+    color:white;
+    padding-left:2px;
+    cursor: pointer;
+    
+    
+}
+.stores-list-container{
+    width:350px;
+    position:absolute;
+    z-index: 100;
+    background:#454E53;
+    left:100px;
+    top:270px;
+    border-radius: 20px;
+    bottom: 10px;
+    /* padding-left:20px;
+    padding-right:20px; */
+    display: flex;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+    display:none;
+    opacity: 0.8;
+
+
+}
+
+.stores-list{
+    flex-grow:1;
+    overflow-y:scroll;
+    padding-left:20px;
+    padding-right:20px;
+
+}
+
+.stores-list-container .store-address{
+    padding-right: 20px;
+    text-transform:uppercase;
+    font-size:15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.store-container{
+   
+    border-bottom: 1px solid #979797;
+    display:flex;
+    cursor: pointer;
+}
+.store-info-container{
+
+    flex-grow: 1;
+
+}
+
+.store-address{
+    margin-top:30px;
+    font-size:21px;
+    color: white;
+}
+.store-phone-number{
+    color: white;
+    margin-top:15px;
+    margin-bottom:15px;
+
+
+}
+.store-address span{
+    display:block;
+}
+.store-number-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.store-number{
+    width:30px;
+    border-radius:50%;
+    height:30px;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  color:black;
+    font-size:12px;
+    font-family: Bookman;
+    font-size:15px;
+
+}
+
+
+.store-info-window{
+    min-width: 300px;
+    font-size: 10px;
+    color:rgba(0,0,0,87)
+}
+.store-info-name{
+    margin-top: 6px;
+    border-bottom: 1px solid #00000029;
+    padding-bottom: 6px;
+    font-family: Bookman;
+    font-size:15px;
+}
+.store-info-status{
+    margin-top: 6px;
+    border-bottom: 1px solid #00000029;
+    padding-bottom: 6px;
+    font-family: Bookman;
+    font-size:15px;
+}
+
+.store-info-address,.store-info-phone{
+    margin-top:8px;
+    display: flex;
+    font-family: Bookman;
+    font-size:15px;
+}
+
+.store-info-address .circle,.store-info-phone .circle{
+
+    width:30px;
+    height:30px;
+    background-color: #1985a1;
+    color:white;
+    border-radius:50%;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    margin-right:8px;
+}
+.store-container-background{
+    display:flex;
+    flex-grow:1;
+    border-radius:10px;
+    padding-left:8px;
+    padding-right:8px;
+    margin-bottom:12px;
+    margin-top:12px;
+    transition: all 0.2s ease-in-out;
+
+}
+.store-container-background:hover{
+    background-color:#ccc;
+}
